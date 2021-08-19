@@ -1,27 +1,29 @@
 package com.company;
 
 public class GameEntity {
-    private int HeroHp;
-    private int HeroDamage;
+    private int heroHp;
+    private int heroDamage;
     private int bossHp;
     private int bossDamage;
-    private int SkeletonHp;
-    private int SkeletonDamage;
+    private int skeletonHp;
+    private int skeletonDamage;
+    private int zombieHp;
+    private int zombieDamage;
 
     public int getHeroHp() {
-        return HeroHp;
+        return heroHp;
     }
 
     public void setHeroHp(int heroHp) {
-        HeroHp = heroHp;
+        this.heroHp = heroHp;
     }
 
     public int getHeroDamage() {
-        return HeroDamage;
+        return heroDamage;
     }
 
     public void setHeroDamage(int heroDamage) {
-        HeroDamage = heroDamage;
+        this.heroDamage = heroDamage;
     }
 
     public int getBossHp() {
@@ -41,22 +43,41 @@ public class GameEntity {
     }
 
     public int getSkeletonHp() {
-        return SkeletonHp;
+        return skeletonHp;
     }
 
     public void setSkeletonHp(int skeletonHp) {
-        SkeletonHp = skeletonHp;
+        this.skeletonHp = skeletonHp;
     }
 
     public int getSkeletonDamage() {
-        return SkeletonDamage;
+        return skeletonDamage;
     }
 
     public void setSkeletonDamage(int skeletonDamage) {
-        SkeletonDamage = skeletonDamage;
+        this.skeletonDamage = skeletonDamage;
     }
 
-    public String info() {
-        return "| bossHp: " + bossHp + " | bossDamage: " + bossDamage;
+    public int getZombieHp() {
+        return zombieHp;
+    }
+
+    public void setZombieHp(int zombieHp) {
+        this.zombieHp = zombieHp;
+    }
+
+    public int getZombieDamage() {
+        return zombieDamage;
+    }
+
+    public void setZombieDamage(int zombieDamage) {
+        this.zombieDamage = zombieDamage;
+    }
+
+    public String infoBoss() {
+        return "| bossHp: " + getBossHp() + " | bossDamage: " + getBossDamage();
+    }
+    public String infoHero(){
+        return  "| HeroHp: " + getHeroHp() + " | heroDamage: "+ getHeroDamage();
     }
 }
